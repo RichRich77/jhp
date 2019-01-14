@@ -1,4 +1,5 @@
 # jhp
+clothing store:
 
 
 ### Requirements
@@ -45,3 +46,136 @@ Incorporate a few of the below suggestions into your project. You'll write bette
 * Run your tests prior to committing your code so you can be sure nothing breaks between commits.
 
 * **Non-Obligatory Bonus**: If you're confident and feel like you have some time to tinker, set up [Travis CI](https://travis-ci.org/). This will automatically run your tests whenever you or any of your team members makes a commit. 
+
+
+
+### Bluebook
+Clothing = {
+    clothing_type:  {shirt, short, pant, sock, underwear}
+    gender          {male, female, unisex}
+    small_quantity  INT
+    medium_quantity INT
+    large_quantity  INT
+    color           {white,black, blue, red, green}
+    price           FLOAT
+    image           STRING
+}
+
+**Home**
+    PATH: /
+    METHOD:
+    AJAX REQUESTS:
+        ON LOAD:
+        ON CLICK:
+    LINKS TO:
+        /products
+        /cart
+        /aboutJHP
+**All Products** -- wishlist - sort by & filter by categories
+    PATH: /products
+        /products/:categories
+    METHOD:
+    AJAX REQUESTS: 
+        ON LOAD:   
+        ON CLICK:  
+    LINKS TO:
+**Individual Product**
+    PATH: /products/:itemID
+    METHOD:
+    AJAX REQUESTS:
+        ON LOAD:
+        ON CLICK:
+    LINKS TO:
+**Cart**
+    PATH: /cart
+    METHOD:
+    AJAX REQUESTS:
+        ON LOAD:
+        ON CLICK:
+    LINKS TO:
+**Checkout**
+    PATH:   /cart/checkout
+    METHOD:
+    AJAX REQUESTS:
+        ON LOAD:
+        ON CLICK:
+    LINKS TO:
+**Mission Statement**
+    
+    PATH: /aboutJHP
+    METHOD:
+    AJAX REQUESTS:
+        ON LOAD:
+        ON CLICK:
+    LINKS TO:
+
+
+sign in/sign up - modal
+
+
+
+# API Routes
+
+## Random Pupper
+
+### CLIENT (REQUESTS):
+
+**PATH:** /api/randompupper
+
+**METHOD:** GET
+
+**DESCRIPTION:** Returns information about a random pupper.
+
+### SERVER (RESPONSES):
+
+**STATUSES:** 200 - Good, 500 - Server Error
+
+**EXAMPLE RESPONSE BODY:**: 
+```json
+{
+    "id": 5,
+    "name": "doggo",
+    "picture": "https://image.com",
+    "info": "Doggo is the best doggo in the whole world of doggos, loves everyone.",
+    "shelterEmail": "help@savedogs.com",
+    "shelterName": "Save Dogs",
+}
+```
+
+## New Pupper
+
+### CLIENT (REQUESTS):
+
+**PATH:** /api/newpupper
+
+**METHOD:** POST
+
+**DESCRIPTION:** Stores a new pupper in the database.
+
+**EXAMPLE REQUEST BODY:** 
+```json
+{
+    "name": "doggo",
+    "picture": "https://image.com",
+    "info": "Doggo is the best doggo in the whole world of doggos, loves everyone.",
+    "shelterEmail": "help@savedogs.com",
+    "shelterName": "Save Dogs",
+}
+```
+
+### SERVER (RESPONSES):
+
+**STATUSES:** 200 - Good, 500 - Server Error
+
+**EXAMPLE RESPONSE BODY:**: 
+On Success:
+```json
+{
+    "id": 5,
+    "name": "doggo",
+    "picture": "https://image.com",
+    "info": "Doggo is the best doggo in the whole world of doggos, loves everyone.",
+    "shelterEmail": "help@savedogs.com",
+    "shelterName": "Save Dogs",
+}
+```
