@@ -129,4 +129,7 @@ db.sequelize.sync(reset).then(function () {
     price: 19.99,
     image: "https://cdn-img-1.wanelo.com/p/59d/ce9/e9a/4b76cc05fafd5d84713e68f/x354-q80.jpg"
   });
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });
