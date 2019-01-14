@@ -8,7 +8,7 @@ module.exports = function (sequelize, DataTypes) {
         gender: {
             type: DataTypes.ENUM,
             allowNull: false,
-            values: ["male", "female", "unisex"],
+            values: ["men", "women"],
         },
         small_quantity: {
             type: DataTypes.INTEGER,
