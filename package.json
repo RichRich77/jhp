@@ -5,6 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node database/seeds.js",
+    "reset-db": "node database/seeds.js reset",
     "start": "node server.js"
   },
   "repository": {

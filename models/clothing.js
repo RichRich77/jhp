@@ -40,11 +40,16 @@ module.exports = function (sequelize, DataTypes) {
             values: ["white", "black", "blue", "red", "green"],
         },
         price: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.FLOAT,
             allowNull: false, 
             validate: {
                 isNumeric: true
             }
+        },
+        image: {
+            type: DataTypes.STRING
         }
     });
-}
+    return Clothing; 
+};
+
