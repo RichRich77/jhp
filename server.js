@@ -31,6 +31,16 @@ require("./controller/html-routes.js")(app);
 // =============================================================
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
+    console.log("App Live at http://localhost:" + PORT);
   });
 });
+
+// Set Handlebars.
+var exphbs = require("express-handlebars");
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
+// Import routes and give the server access to them. Connecting to "Controllers folder"
+var routes = require("./controller/html-routes.js");
+app.use('/',routes);
