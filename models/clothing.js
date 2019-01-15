@@ -46,6 +46,15 @@ module.exports = function (sequelize, DataTypes) {
                 isNumeric: true
             }
         },
+        review: {
+            type: DataTypes.FLOAT,
+            allowNull: true,
+            validate: {
+                isNumeric: true,
+                min: 0,
+                max: 5,
+            }
+        },
         image: {
             type: DataTypes.STRING
         }
