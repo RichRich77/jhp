@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          len: [2, 12]
+          len: [2, 20]
         },
       },
       email: {
@@ -18,10 +18,7 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          len: [5, 20],
-          // isUppercase: true,
-          // isLowercase: true,
-          // isInt: true
+          is: '^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8,20}$'
         }
       },
     });
