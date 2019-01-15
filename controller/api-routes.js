@@ -21,6 +21,18 @@ module.exports = function(app) {
             res.json(dbClothing);
         })
     });
+
+    //GET route based on clothing type
+    app.get("/api/clothing/clothing_type/:clothing_type", function(req, res) {
+        db.Clothing.findAll({
+            where: {
+                clothing_type: req.params.clothing_type
+            }
+        }).then(function(dbClothing) {
+            res.json(dbClothing);
+        });
+    });
+
     //GET route for selecting all men clothing
     app.get("/api/clothing/gender/men", function(req, res) {
         db.Clothing.findAll({
@@ -41,28 +53,9 @@ module.exports = function(app) {
             res.json(dbClothing);
         });
     });
-    // GET route based on color
-    app.get("/api/clothing/color/:color", function(req, res) {
-        db.Clothing.findAll({
-            where: {
-                color: req.params.color
-            }
-        }).then(function(dbClothing) {
-            res.json(dbClothing);
-        });
-    });
-    //GET route based on clothing
-    app.get("/api/clothing/clothing_type/:clothing_type", function(req, res) {
-        db.Clothing.findAll({
-            where: {
-                clothing_type: req.params.clothing_type
-            }
-        }).then(function(dbClothing) {
-            res.json(dbClothing);
-        });
-    });
-    // GET route based on size 
-    app.get("/api/clothing/small_quantity/small", function(req, res) {
+
+     // GET route based on item size that have a quantity greater than 0 
+     app.get("/api/clothing/small_quantity/small", function(req, res) {
         db.Clothing.findAll({
             where: {
                 small_quantity: {
@@ -96,13 +89,41 @@ module.exports = function(app) {
         });
     });
 
+    // GET route based on color
+    app.get("/api/clothing/color/:color", function(req, res) {
+        db.Clothing.findAll({
+            where: {
+                color: req.params.color
+            }
+        }).then(function(dbClothing) {
+            res.json(dbClothing);
+        });
+    });
+    
+   
+    // GET route for any clothing under $50 
+    app.get("/api/clothing/price/lowprice", function(req, res) {
+        db.Clothing.findAll({
+            where: {
+                price: {
+                    [Op.lte]: 50.00
+                }
+            }
+        }).then(function(dbClothing) {
+            res.json(dbClothing);
+        });
+    });
 
-
-
-
-
-
-
-
-
+    // GET route for any clothing above $50
+    app.get("/api/clothing/price/highprice", function(req, res) {
+        db.Clothing.findAll({
+            where: {
+                price: {
+                    [Op.gt]: 50.00
+                }
+            }
+        }).then(function(dbClothing) {
+            res.json(dbClothing);
+        });
+    });
 }
