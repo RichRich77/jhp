@@ -61,6 +61,18 @@ Clothing = {
     image           STRING
 }
 
+**Shopping Cart**
+    myBagTitle          -- My Bag (<number of items in cart>) title
+    keepShopping        -- link to keep shopping (next to myBagTitle)
+    myBagBody           -- body of mybag (includes bagList and checkoutBox)
+    bagList             -- display of items in cart
+    checkoutBox         -- checkout card
+    orderSummaryTitle   -- title for order summary card
+    cartSubtotal        -- subtotal to be used in order summary card
+    cartTax             -- estimated tax to be used in order summary card.
+    cartTotal           -- order total
+
+
 **Home**
     PATH: /
     METHOD:

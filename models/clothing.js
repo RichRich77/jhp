@@ -50,7 +50,8 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.FLOAT,
             allowNull: true,
             validate: {
-                isNumeric: [0,5]
+                min: 0,
+                max: 5
             }
         },
         image: {
