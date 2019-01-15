@@ -129,6 +129,22 @@ module.exports = function(app) {
         });
     });
 
+    // GET route for reviews
+    app.get("/api/clothing/review/:review", function(req, res) {
+        db.Clothing.findAll({
+            where: {
+                review: {
+                    [Op.gte]: parseFloat(req.params.review),
+                }
+            }
+        }).then(function(dbClothing) {
+            res.json(dbClothing);
+        });
+    });
+    
+
+
+
 // PUT (UPDATE) ROUTES ===========================================================
     app.put("/api/clothing", function(req, res) {
         db.Clothing.update(req.body, 
