@@ -5,6 +5,8 @@ var Op = db.Sequelize.Op;
 //exporting all routes
 module.exports = function(app) {
 
+
+// ALL THE GET ROUTES ===============================================================
     //GET route for getting all of the clothings
     app.get("/api/clothing", function(req, res) {
         db.Clothing.findAll({}).then(function(dbClothing) {
@@ -126,4 +128,16 @@ module.exports = function(app) {
             res.json(dbClothing);
         });
     });
-}
+
+// PUT (UPDATE) ROUTES ===========================================================
+    app.put("/api/clothing", function(req, res) {
+        db.Clothing.update(req.body, 
+        {
+            where: {
+                id: req.body.id
+            }
+        }).then(function(dbClothing) {
+            res.json(dbClothing);
+        });
+    });
+};
