@@ -19,9 +19,9 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false,
         validate: {
           len: [5, 20],
-          isUppercase: true,
-          isLowercase: true,
-          isInt: true
+          // isUppercase: true,
+          // isLowercase: true,
+          // isInt: true
         }
       },
     });
