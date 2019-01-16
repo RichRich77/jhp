@@ -1,0 +1,17 @@
+#signupButton {
+    background-color: dodgerblue;
+}
+
+#jhp {
+    font-family: 'Roboto Slab', serif;
+    font-size: 150%;
+}
+
+.navbar-menu {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+}
+
+.navbar-item img {
+    max-height: 4rem;
+}
