@@ -61,6 +61,42 @@ Clothing = {
     image           STRING
 }
 
+**Shopping Cart**
+    myBagTitle          -- My Bag (<number of items in cart>) title
+    keepShopping        -- link to keep shopping (next to myBagTitle)
+    myBagBody           -- body of mybag (includes bagList and checkoutBox)
+    bagList             -- display of items in cart
+    checkoutBox         -- checkout card
+    orderSummaryTitle   -- title for order summary card
+    cartSubtotal        -- subtotal to be used in order summary card
+    cartTax             -- estimated tax to be used in order summary card.
+    cartTotal           -- order total
+    ShoppingCart        -- shopping cart table
+    loadShoppingCart    -- js function to load shopping cart
+
+  **FOR JQUERY**
+    #myBagTitle         -- header for shopping cart
+    #numItems           -- number of items in cart
+    #keepShoppingLink   -- link to keep shopping
+                            - sends you to all products
+    #myBagBody          -- body of my bag
+    #bagList            -- display of all items in cart
+    #biImage            -- image of item. 
+                            - change src and alt
+    #biName             -- name of item
+                            - change text with name of item
+    #biPrice            -- price of item
+                            - change text with unit price of item
+    #biSize             -- dropdown set to chosen size
+    .biSizeSelect       -- options in size dropdown
+                            - changeable
+    #biQuantity         -- quantity of item at that size
+                            - changeable
+    #biDecQuant         -- button to decrement quantity of item
+    #biIncQuant         -- button to increment quantity of item
+    .biQuantLine        -- elements that should all be on one line for quantity of item
+    #biSubtotal         -- subtotal of that number of carts 
+
 **Home**
     PATH: /
     METHOD:
