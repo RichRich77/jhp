@@ -157,53 +157,81 @@
             <span class="flow-3"></span>
         </div>
         <div class="section">
-            <div class="box">
-                <div class="field has-addons">
-                    <div class="control is-expanded">
-                        <input class="input has-text-centered" type="search" placeholder="» » » » » » search « « « « « «">
-                    </div>
-                    <div class="control">
-                        <a class="button is-info">Search</a>
-                    </div>
-                </div>
-            </div>
+            
             <!-- CLothing -->
             <div class="row columns">
                 <!-- 1 -->
                 <div class="column is-one-third">
-                    <div class="card large">
+                    <div class="card large" id="shirtId">
                         <div class="card-image">
                             <figure class="image">
                                 <!-- shirt image -->
                                 <img src="https://dtpmhvbsmffsz.cloudfront.net/posts/2016/09/11/57d5cb5e2599fe3e2a00776d/m_57d5cb5e2599fe3e2a00776e.jpg"
-                                    alt="Image" height="287.98px">
+                                    alt="Image" id="clothingImg">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-4 no-padding">JHP Shirt</p>
-                                    <br>
-                                    <p><span class="title is-6">$54.99</span></p>
-                                    <br>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--size--</option>
-                                            <option>S</option>
-                                            <option>M</option>
-                                            <option>L</option>
-                                        </select>
+                                    <p class="title is-4 no-padding clothingTitle">JHP Shirts</p>
+
+                                    <p class="clothingTitle"><span class="title is-6">$54.99</span></p>
+
+                                    <p class="buttons">
+                                        <a class="button is-medium">
+                                            <span class="icon is-small" id="smallInput">
+                                                S
+                                            </span>
+                                        </a>
+                                        <a class="button is-medium">
+                                            <span class="icon is-small" id="mediumInput">
+                                                M
+                                            </span>
+                                        </a>
+                                        <a class="button is-medium">
+                                            <span class="icon is-small" id="largeInput">
+                                                L
+                                            </span>
+                                        </a>
+                                        <a class="select is-small">
+                                            <select id="quantity">
+                                                <option>quantity</option>
+                                                <option id="one">1</option>
+                                                <option id="two">2</option>
+                                                <option id="three">3</option>
+                                                <option id="four">4</option>
+                                                <option id="five">5</option>
+                                            </select>
+                                        </a>
+                                    </p>
+                                    <div class="columns">
+                                        <div class="column">
+                                            <figure class="button is-32x32" id="black">
+                                                <img src="assets/images/Swatch_Black.jpeg" alt="black">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32" id="red">
+                                                <img src="./assets/images/redswatch.jpg" alt="red">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32" id="white">
+                                                <img src="assets/images/whiteswatch.jpeg" alt="white">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32" id="blue">
+                                                <img src="assets/images/blueswatch.jpg" alt="blue">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32" id="green">
+                                                <img src="assets/images/greenswatch.jpg" alt="green">
+                                            </figure>
+                                        </div>
                                     </div>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--color--</option>
-                                            <option>white</option>
-                                            <option>black</option>
-                                            <option>blue</option>
-                                            <option>red</option>
-                                            <option>green</option>
-                                        </select>
-                                    </div>
+                                    <a type="submit" class="button is-fullwidth" id="addToBag">Add to Bag!</a>
                                 </div>
                             </div>
                         </div>
@@ -216,34 +244,71 @@
                             <figure class="image">
                                 <!-- Short image -->
                                 <img src="https://i.pinimg.com/originals/91/50/16/915016f39ce37982cbd6eb3137bc3dfd.jpg"
-                                    alt="Image" height="287.98px">
+                                    alt="Image" height="287.98px" id="clothingImg">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-4 no-padding">JHP Shorts</p>
-                                    <br>
-                                    <p><span class="title is-6">$49.99</span></p>
-                                    <br>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--size--</option>
-                                            <option>S</option>
-                                            <option>M</option>
-                                            <option>L</option>
-                                        </select>
+                                    <p class="title is-4 no-padding clothingTitle">JHP Shorts</p>
+
+                                    <p class="clothingTitle"><span class="title is-6">$49.99</span></p>
+
+                                    <p class="buttons">
+                                        <a class="button is-medium">
+                                            <span class="icon is-small">
+                                                S
+                                            </span>
+                                        </a>
+                                        <a class="button is-medium">
+                                            <span class="icon is-small">
+                                                M
+                                            </span>
+                                        </a>
+                                        <a class="button is-medium">
+                                            <span class="icon is-small">
+                                                L
+                                            </span>
+                                        </a>
+                                        <a class="select is-small">
+                                            <select>
+                                                <option>quantity</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </a>
+                                    </p>
+                                    <div class="columns">
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/Swatch_Black.jpeg" alt="black">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="./assets/images/redswatch.jpg" alt="red">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/whiteswatch.jpeg" alt="white">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/blueswatch.jpg" alt="blue">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/greenswatch.jpg" alt="green">
+                                            </figure>
+                                        </div>
                                     </div>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--color--</option>
-                                            <option>white</option>
-                                            <option>black</option>
-                                            <option>blue</option>
-                                            <option>red</option>
-                                            <option>green</option>
-                                        </select>
-                                    </div>
+                                    <a class="button is-fullwidth">Add to Bag!</a>
                                 </div>
                             </div>
                         </div>
@@ -255,35 +320,72 @@
                         <div class="card-image">
                             <figure class="image">
                                 <!-- Pant image -->
-                                <img src="http://www.mychicagoathlete.com/wp-content/uploads/LM5421S_0001_1.jpeg"
-                                    alt="Image">
+                                <img src="http://www.mychicagoathlete.com/wp-content/uploads/LM5421S_0001_1.jpeg" alt="Image"
+                                    id="clothingImg">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-4 no-padding">JHP Pant</p>
-                                    <br>
-                                    <p><span class="title is-6">$74.99</span></p>
-                                    <br>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--size--</option>
-                                            <option>S</option>
-                                            <option>M</option>
-                                            <option>L</option>
-                                        </select>
+                                    <p class="title is-4 no-padding clothingTitle">JHP Pants</p>
+
+                                    <p class="clothingTitle"><span class="title is-6">$74.99</span></p>
+
+                                    <p class="buttons">
+                                        <a class="button is-medium">
+                                            <span class="icon is-small">
+                                                S
+                                            </span>
+                                        </a>
+                                        <a class="button is-medium">
+                                            <span class="icon is-small">
+                                                M
+                                            </span>
+                                        </a>
+                                        <a class="button is-medium">
+                                            <span class="icon is-small">
+                                                L
+                                            </span>
+                                        </a>
+                                        <a class="select is-small">
+                                            <select>
+                                                <option>quantity</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </a>
+                                    </p>
+                                    <div class="columns">
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/Swatch_Black.jpeg" alt="black">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="./assets/images/redswatch.jpg" alt="red">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/whiteswatch.jpeg" alt="white">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/blueswatch.jpg" alt="blue">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/greenswatch.jpg" alt="green">
+                                            </figure>
+                                        </div>
                                     </div>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--color--</option>
-                                            <option>white</option>
-                                            <option>black</option>
-                                            <option>blue</option>
-                                            <option>red</option>
-                                            <option>green</option>
-                                        </select>
-                                    </div>
+                                    <a class="button is-fullwidth">Add to Bag!</a>
                                 </div>
                             </div>
                         </div>
@@ -298,34 +400,71 @@
                             <figure class="image">
                                 <!-- sock image -->
                                 <img src="https://i.pinimg.com/736x/c1/60/4b/c1604b1169e942a3777c0a8715d20513--lululemon-men-lulu-lemon.jpg"
-                                    alt="Image">
+                                    alt="Image" id="clothingImg">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-4 no-padding">JHP Socks</p>
-                                    <br>
-                                    <p><span class="title is-6">$14.99</span></p>
-                                    <br>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--size--</option>
-                                            <option>S</option>
-                                            <option>M</option>
-                                            <option>L</option>
-                                        </select>
+                                    <p class="title is-4 no-padding clothingTitle">JHP Socks</p>
+
+                                    <p class="clothingTitle"><span class="title is-6">$14.99</span></p>
+
+                                    <p class="buttons">
+                                        <a class="button is-medium">
+                                            <span class="icon is-small">
+                                                S
+                                            </span>
+                                        </a>
+                                        <a class="button is-medium">
+                                            <span class="icon is-small">
+                                                M
+                                            </span>
+                                        </a>
+                                        <a class="button is-medium">
+                                            <span class="icon is-small">
+                                                L
+                                            </span>
+                                        </a>
+                                        <a class="select is-small">
+                                            <select>
+                                                <option>quantity</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </a>
+                                    </p>
+                                    <div class="columns">
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/Swatch_Black.jpeg" alt="black">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="./assets/images/redswatch.jpg" alt="red">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/whiteswatch.jpeg" alt="white">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/blueswatch.jpg" alt="blue">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/greenswatch.jpg" alt="green">
+                                            </figure>
+                                        </div>
                                     </div>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--color--</option>
-                                            <option>white</option>
-                                            <option>black</option>
-                                            <option>blue</option>
-                                            <option>red</option>
-                                            <option>green</option>
-                                        </select>
-                                    </div>
+                                    <a class="button is-fullwidth">Add to Bag!</a>
                                 </div>
                             </div>
                         </div>
@@ -338,224 +477,103 @@
                             <figure class="image">
                                 <!-- Underwear image -->
                                 <img src="https://storage.googleapis.com/lulu-fanatics/product/35841/1280/lululemon-no-boxer-boxer-river-cut-cape-red-rugged-blue-025260-216772.jpg"
-                                    alt="Image">
+                                    alt="Image" id="clothingImg">
                             </figure>
                         </div>
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content">
-                                    <p class="title is-4 no-padding">JHP Briefs</p>
-                                    <br>
-                                    <p><span class="title is-6">$19.99</span></p>
-                                    <br>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--size--</option>
-                                            <option>S</option>
-                                            <option>M</option>
-                                            <option>L</option>
-                                        </select>
+                                    <p class="title is-4 no-padding clothingTitle">JHP Briefs</p>
+
+                                    <p class="clothingTitle"><span class="title is-6">$19.99</span></p>
+
+                                    <p class="buttons">
+                                        <a class="button is-medium">
+                                            <span class="icon is-small">
+                                                S
+                                            </span>
+                                        </a>
+                                        <a class="button is-medium">
+                                            <span class="icon is-small">
+                                                M
+                                            </span>
+                                        </a>
+                                        <a class="button is-medium">
+                                            <span class="icon is-small">
+                                                L
+                                            </span>
+                                        </a>
+                                        <a class="select is-small">
+                                            <select>
+                                                <option>quantity</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </a>
+                                    </p>
+                                    <div class="columns">
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/Swatch_Black.jpeg" alt="black">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="./assets/images/redswatch.jpg" alt="red">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/whiteswatch.jpeg" alt="white">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/blueswatch.jpg" alt="blue">
+                                            </figure>
+                                        </div>
+                                        <div class="column">
+                                            <figure class="button is-32x32">
+                                                <img src="assets/images/greenswatch.jpg" alt="green">
+                                            </figure>
+                                        </div>
                                     </div>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--color--</option>
-                                            <option>white</option>
-                                            <option>black</option>
-                                            <option>blue</option>
-                                            <option>red</option>
-                                            <option>green</option>
-                                        </select>
-                                    </div>
+                                    <a class="button is-fullwidth">Add to Bag!</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <!-- shirt image -->
-                                <img src="https://dtpmhvbsmffsz.cloudfront.net/posts/2016/09/11/57d5cb5e2599fe3e2a00776d/m_57d5cb5e2599fe3e2a00776e.jpg"
-                                    alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">JHP Shirt</p>
-                                    <br>
-                                    <p><span class="title is-6">$54.99</span></p>
-                                    <br>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--size--</option>
-                                            <option>S</option>
-                                            <option>M</option>
-                                            <option>L</option>
-                                        </select>
-                                    </div>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--color--</option>
-                                            <option>white</option>
-                                            <option>black</option>
-                                            <option>blue</option>
-                                            <option>red</option>
-                                            <option>green</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
+
+                <!-- TODO: need to add more cards here -->
             </div>
-
-            <div class="row columns is-multiline">
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <!-- shirt image -->
-                                <img src="https://dtpmhvbsmffsz.cloudfront.net/posts/2016/09/11/57d5cb5e2599fe3e2a00776d/m_57d5cb5e2599fe3e2a00776e.jpg"
-                                    alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">JHP Shirt</p>
-                                    <br>
-                                    <p><span class="title is-6">$54.99</span></p>
-                                    <br>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--size--</option>
-                                            <option>S</option>
-                                            <option>M</option>
-                                            <option>L</option>
-                                        </select>
-                                    </div>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--color--</option>
-                                            <option>white</option>
-                                            <option>black</option>
-                                            <option>blue</option>
-                                            <option>red</option>
-                                            <option>green</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <!-- shirt image -->
-                                <img src="https://dtpmhvbsmffsz.cloudfront.net/posts/2016/09/11/57d5cb5e2599fe3e2a00776d/m_57d5cb5e2599fe3e2a00776e.jpg"
-                                    alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">JHP Shirt</p>
-                                    <br>
-                                    <p><span class="title is-6">$54.99</span></p>
-                                    <br>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--size--</option>
-                                            <option>S</option>
-                                            <option>M</option>
-                                            <option>L</option>
-                                        </select>
-                                    </div>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--color--</option>
-                                            <option>white</option>
-                                            <option>black</option>
-                                            <option>blue</option>
-                                            <option>red</option>
-                                            <option>green</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-one-third">
-                    <div class="card large">
-                        <div class="card-image">
-                            <figure class="image">
-                                <!-- shirt image -->
-                                <img src="https://dtpmhvbsmffsz.cloudfront.net/posts/2016/09/11/57d5cb5e2599fe3e2a00776d/m_57d5cb5e2599fe3e2a00776e.jpg"
-                                    alt="Image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">JHP Shirt</p>
-                                    <br>
-                                    <p><span class="title is-6">$54.99</span></p>
-                                    <br>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--size--</option>
-                                            <option>S</option>
-                                            <option>M</option>
-                                            <option>L</option>
-                                        </select>
-                                    </div>
-                                    <div class="select is-rounded">
-                                        <select>
-                                            <option>--color--</option>
-                                            <option>white</option>
-                                            <option>black</option>
-                                            <option>blue</option>
-                                            <option>red</option>
-                                            <option>green</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- TODO: need to add more cards here -->
+            <!-- End Staff -->
         </div>
-        <!-- End Staff -->
-    </div>
-    </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="content has-text-centered">
-                <div class="soc">
-                    <a href="#"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <div class="soc">
+                        <a href="#"><i class="fa fa-square fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-square fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-square fa-2x" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-square fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                    <p>
+                        <a href="/">JHP</a>
+                    </p>
                 </div>
-                <p>
-                    <a href="/">JHP</a>
-                </p>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="./assets/javascript/men.js"></script>
+        <script src="./assets/javascript/men.js"></script>
+        <script src="./js/shoppingcart.js" type="text/javascript"></script>
 
 
 </body>
