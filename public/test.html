@@ -12,8 +12,7 @@
 </head>
 
 <body>
-    <!-- add code here -->
-    <!-- body of shopping cart -->
+
     <div class="container is-fluid">
         <!-- heading of bag -->
         <nav class="level navbar-item">
@@ -22,9 +21,9 @@
             </div>
 
             <div class="navbar-end">
-                <div class="heading navbar-item" id="keepShoppingLink">
+                <a hreft="#" class="heading navbar-item" id="keepShoppingLink">
                     Keep Shopping
-                </div>
+                </a>
             </div>
         </nav>
         <!-- body of bag -->
@@ -33,46 +32,55 @@
             <div class="column is-three-fifths" id="bagList">
                 <div class="columns">
                     <div class="column">
-                        <img src="https://via.placeholder.com/150" alt="">
-                        hello
+                        <img src="https://via.placeholder.com/150" alt="" id="biImage">
                     </div>
-                    <div class="column has-text-right is-full">
+                    <div class="column is-three-quarters">
                         <div class="columns">
-                            <div class="column">
+                            <div class="column has-text-right">
                                 <a href="#"><i class="fas fa-times"></i></a>
                             </div>
                         </div>
                         <div class="columns">
                             <div class="column">
-                                <p class="heading">PRODUCT NAME</p>
-                                <p class="heading">$ 15.00</p>
+                                <p class="heading" id="biName">PRODUCT NAME</p>
+                                <p class="heading">$ <span id="biPrice">15.00</span></p>
                             </div>
                             <div class="column">
                                 <p class="heading">SIZE</p>
-                                <p>small</p>
+                                <div class="dropdown is-hoverable">
+                                    <div class="dropdown-trigger">
+                                        <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu4">
+                                            <span class="heading" id="biSize">SMALL</span>
+                                            <span class="icon is-small">
+                                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                        <div class="dropdown-content">
+                                            <a href="#" class="dropdown-item heading biSizeSelect" value="small">SMALL</a>
+                                            <a href="#" class="dropdown-item heading biSizeSelect" value="medium">MEDIUM</a>
+                                            <a href="#" class="dropdown-item heading biSizeSelect" value="large">LARGE</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="column">
                                 <p class="heading">QTY</p>
-                                <p>- 2 +</p>
+                                <p>
+                                    <a href="#" class="heading biQuantLine" id="biDecQuant">- </a>
+                                    <span class="heading biQuantLine" id="biQuantity">2</span>
+                                    <a href="#" class="heading biQuantLine" id="biIncQuant"> +</a>
+                                </p>
                             </div>
                             <div class="column">
                                 <p class="heading">SUBTOTAL</p>
-                                <p>$ 30.00</p>
+                                <p class="heading">$ <span id="biSubtotal">30.00</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
 
             <div class="column is-one-quarter" id="checkoutBox">
                 <!-- <nav id="anchors" class="bd-anchor is-active is-pinned"> -->
