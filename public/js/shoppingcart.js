@@ -1,61 +1,53 @@
-var numItems; // number of items in cart
-$("#cartSubtotal").text(234.43);
-$("#cartTax").text((234.43 * 0.075).toFixed(2));
-$("#cartTotal").text((0 + (234.43 * 1.075)).toFixed(2));
+$(document).ready(function () {
 
-// add onclick for adding to cart to increment numitems however many
+    var smallInput = $("#smallInput");
+    var mediumInput = $("#mediumInput");
+    var largeInput = $("#largeInpt");
+    var oneQuant = $("#one");
+    var twoQuant = $("#two");
+    var threeQuant = $("#three");
+    var fourQuant = $("#four");
+    var fiveQuant = $("#five");
+    var quantity = $("#quantity");
+    var black = $("#black");
+    var red = $("#red");
+    var white = $("#white");
+    var blue = $("#blue");
+    var green = $("#green");
 
+    $(document).on("sumbit", "#shirtId", handleShirtSubmit);
 
-// When the page loads, grab and display all of our chirps
-// $.get("/shoppingcart", function(data) { //pretty sure gotta change this line
+    function handleShirtSubmit(event) {
+        event.preventDefault();
 
-//     if (data.length !== 0) {
-  
-//       for (var i = 0; i < data.length; i++) {
-  
+        if ((!smallInput || !mediumInput || !largeInput) && 
+        (!oneQuant || !twoQuant || !threeQuant || !fourQuant || !fiveQuant) && 
+        (!black || !red || !white || !blue || !green)) {
+            return;
+        }
 
+        upsertUser({
+            clothing_type: "shirt",
+            gender: "male",
+            if (smallInput) {
+                small_quantity: quantity.val()
+            },
+            if (mediumInput) {
+                medium_quantity: quantity.val()
+            },
+            if (largeInput) {
+                medium_quantity: quantity.val()
+            },
+            // color: 
+        });
+    }
 
+    function upsertUser(userData) {
+        $.put("/api/shoppingcart", userData)
+            .then(getUsers);
+    }
 
-
-
-
-//         var row = $("<div>");
-//         row.addClass("chirp");
-  
-//         row.append("<p>" + data[i].author + " chirped.. </p>");
-//         row.append("<p>" + data[i].body + "</p>");
-//         row.append("<p>At " + moment(data[i].created_at).format("h:mma on dddd") + "</p>");
-  
-//         $("#chirp-area").prepend(row);
-  
-//       }
-  
-//     }
-  
-//   });
-  
-
-
-  <div class="level"><div class="level-item level-right"><i class="fas fa-times"></i></div></div>
-    
-
-
-// function loadShoppingCart() {
-//     // display how many items in cart
-//     $("#numItems").text(numItems); // update 
-
-//     // left join. and then use new joined shopping cart to do everything
-//     // SELECT * FROM ShoppingCart
-//     // LEFT JOIN Clothing ON ShoppingCart.ProductID = Clothing.ID
-//     // ORDER BY ShoppingCart.ID;
-
-//     for (var i = 1; i <= numItems; i++) {
-//         SELECT 
-//         addToBagList();
-//     }
-
-
-
-
-
-// }
+    function getUsers() {
+        $.get("api/shoppingcart", userData);
+    }
+})
