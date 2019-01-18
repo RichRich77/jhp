@@ -10,8 +10,6 @@ module.exports = function(app) {
   app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
-  
-  // index route loads view 
 
   //this will run the login page
   app.get("/user", function(req, res) {
@@ -24,4 +22,52 @@ module.exports = function(app) {
   })
 
   //
+  app.get("/ourvision", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/ourvision.html"));
+  });
+
+  app.get("/women", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/women.html"));
+  });
+
+  app.get("/women/bestsellers", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/womenbestseller.html"));
+  });
+
+  app.get("/women/tops", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/womentops.html"));
+  });
+
+  app.get("/women/bottoms", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/womenbottoms.html"));
+  });
+
+  app.get("/women/accessories", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/womenaccessories.html"));
+  });
+
+  app.get("/men", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/men.html"));
+  });
+
+  app.get("/men/bestsellers", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/menbestseller.html"));
+  });
+
+  app.get("/men/tops", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/mentops.html"));
+  });
+
+  app.get("/men/bottoms", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/menbottoms.html"));
+  });
+
+  app.get("/men/accessories", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/menaccessories.html"));
+  });
+
+  app.get("/community", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/community.html"));
+  });
+
 };
