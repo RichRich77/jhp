@@ -38,9 +38,7 @@ app.use(express.static("public"));
 require("./controller/clothing-api-routes.js")(app);
 require("./controller/user-api-routes.js")(app);
 require("./controller/html-routes.js")(app);
-
-require("./routes/html-routes.js")(app);
-require("./routes/api-routes.js")(app);
+require("./controller/shoppincart-api-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================

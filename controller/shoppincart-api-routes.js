@@ -9,8 +9,14 @@ module.exports = function(app) {
 // ALL THE GET ROUTES ===============================================================
     //GET route for getting all of the clothings
     app.get("/api/shoppingcart", function(req, res) {
-        db.Clothing.findAll({}).then(function(dbClothing) {
-            res.json(dbClothing);
-        })
+        db.Shoppingcart.findAll({}).then(function(dbShoppingcart) {
+            res.json(dbShoppingcart);
+        });
+    });
+
+    app.post("/api/shoppingcart", function(req, res) {
+        db.Shoppingcart.create(req.body).then(function(dbShoppingcart) {
+            res.json(dbShoppingcart);
+        });
     });
 };

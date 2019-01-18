@@ -11,3 +11,7 @@
 .button:hover, .button:active {
     background-color: dodgerblue;
 }
+
+.button.on {
+    background-color: dodgerblue;
+}
