@@ -5,8 +5,8 @@ $('.message a').click(function(){
  $(document).ready(function() {
 
 var nameInput = $("#user-name");
-var emailInput = $("#user-email");
-var passwordInput = $("#user-password");
+var emailInput = $("#email-input");
+var passwordInput = $("#password-input");
 
  $(document).on("submit", ".register-form", handleUserFormSubmit);
 
