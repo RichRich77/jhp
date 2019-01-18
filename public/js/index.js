@@ -1,7 +1,4 @@
-$("#showModal").click(function() {
-    $(".modal").addClass("is-active");  
-  });
-  
-  $(".modal-close").click(function() {
-     $(".modal").removeClass("is-active");
-  });
+
+$.get("/api/clothing/gender/women", function(data){
+   console.log (data)
+})
