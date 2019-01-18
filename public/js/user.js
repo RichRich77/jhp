@@ -2,11 +2,17 @@ $('.message a').click(function(){
     $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
  });
 
- $(document).ready(function() {
+
+$(document).ready(function() {
 
 var nameInput = $("#user-name");
+<<<<<<< HEAD
 var emailInput = $("input#email-input");
 var passwordInput = $("input#password-input");
+=======
+var emailInput = $("#email-input");
+var passwordInput = $("#password-input");
+>>>>>>> a1977627734de7300bfb775f02a1ee5fd56e21a4
 
  $(document).on("submit", ".register-form", handleUserFormSubmit);
 
@@ -38,4 +44,4 @@ var passwordInput = $("input#password-input");
  function getUsers() {
      $.get("api/users", userData);
  }
-})
+});

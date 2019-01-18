@@ -15,7 +15,7 @@ $(document).ready(function () {
     var blue = $("#blue");
     var green = $("#green");
 
-    $(document).on("sumbit", "#shirtId", handleShirtSubmit);
+$(document).on("click", "#addToBag", handleShirtSubmit);
 
     function handleShirtSubmit(event) {
         event.preventDefault();
@@ -50,4 +50,4 @@ $(document).ready(function () {
     function getUsers() {
         $.get("api/shoppingcart", userData);
     }
-})
+});
