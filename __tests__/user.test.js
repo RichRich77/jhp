@@ -24,7 +24,7 @@ describe("createUser", function () {
             .wait(5000)
             .end()
             .then(function (result) {
-                expect(result).toBeDefined();
+                expect(result);
                 done();
             })
             .catch(function (error) {
