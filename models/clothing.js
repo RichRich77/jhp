@@ -1,4 +1,4 @@
-module.exports = function (sequelize, DataTypes) {
+module.exports = function Clothing(sequelize, DataTypes) {
     var Clothing = sequelize.define("Clothing", {
         clothing_type: {
             type: DataTypes.ENUM,
