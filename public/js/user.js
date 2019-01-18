@@ -2,11 +2,12 @@ $('.message a').click(function(){
     $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
  });
 
- $(document).ready(function() {
+
+$(document).ready(function() {
 
 var nameInput = $("#user-name");
-var emailInput = $("#user-email");
-var passwordInput = $("#user-password");
+var emailInput = $("#email-input");
+var passwordInput = $("#password-input");
 
  $(document).on("submit", ".register-form", handleUserFormSubmit);
 
@@ -32,4 +33,4 @@ var passwordInput = $("#user-password");
  function getUsers() {
      $.get("api/users", userData);
  }
-})
+});
