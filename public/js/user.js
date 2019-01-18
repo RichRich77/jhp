@@ -6,13 +6,8 @@ $('.message a').click(function(){
 $(document).ready(function() {
 
 var nameInput = $("#user-name");
-<<<<<<< HEAD
-var emailInput = $("input#email-input");
-var passwordInput = $("input#password-input");
-=======
 var emailInput = $("#email-input");
 var passwordInput = $("#password-input");
->>>>>>> a1977627734de7300bfb775f02a1ee5fd56e21a4
 
  $(document).on("submit", ".register-form", handleUserFormSubmit);
 
@@ -33,11 +28,11 @@ var passwordInput = $("#password-input");
          password: passwordInput.val().trim()
      });
      
-     $('#log-info').html("Logged In");
+    //  $('#log-info').html("Logged In");
  }
 
  function upsertUser(userData) {
-     $.post("/api/users", userData)
+     $.post("api/users", userData)
      .then(getUsers);
  }
 
