@@ -19,3 +19,7 @@ body {
 .navbar-item img {
     max-height: 4rem;
 }
+
+.carousel .carousel-container .carousel-item .title {
+    font-size: 1.25rem;
+}
