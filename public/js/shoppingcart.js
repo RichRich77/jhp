@@ -15,39 +15,43 @@ $(document).ready(function () {
     var blue = $("#blue");
     var green = $("#green");
 
-$(document).on("click", "#addToBag", handleShirtSubmit);
+
+    $(function () {
+        $('.button').click(function () {
+            $(this).toggleClass('on');
+        });
+    });
+
+    $(document).on("click", "#addToBag", handleShirtSubmit);
 
     function handleShirtSubmit(event) {
         event.preventDefault();
 
-        if ((!smallInput || !mediumInput || !largeInput) && 
-        (!oneQuant || !twoQuant || !threeQuant || !fourQuant || !fiveQuant) && 
-        (!black || !red || !white || !blue || !green)) {
-            return;
-        }
+        // if ((!smallInput || !mediumInput || !largeInput) &&
+        //     (!oneQuant || !twoQuant || !threeQuant || !fourQuant || !fiveQuant) &&
+        //     (!black || !red || !white || !blue || !green)) {
+        //     return;
+        // }
 
-        upsertUser({
+        upsertItem({
             clothing_type: "shirt",
-            gender: "male",
-            if (smallInput) {
-                small_quantity: quantity.val()
-            },
-            if (mediumInput) {
-                medium_quantity: quantity.val()
-            },
-            if (largeInput) {
-                medium_quantity: quantity.val()
-            },
-            // color: 
+            gender: "men",
+            small_quantity: 1,
+            medium_quantity: 0,
+            large_quantity: 0,
+            color: "white",
+            price: 54.99,
+            review: "5",
+            image: "https://dtpmhvbsmffsz.cloudfront.net/posts/2016/09/11/57d5cb5e2599fe3e2a00776d/m_57d5cb5e2599fe3e2a00776e.jpg"
         });
     }
 
-    function upsertUser(userData) {
-        $.put("/api/shoppingcart", userData)
-            .then(getUsers);
+    function upsertItem(itemData) {
+        $.post("/api/shoppingcart", itemData)
+            .then(getItems);
     }
 
-    function getUsers() {
-        $.get("api/shoppingcart", userData);
+    function getItems() {
+        $.get("/api/shoppingcart", itemData);
     }
 });
