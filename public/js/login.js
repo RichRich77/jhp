@@ -1,3 +1,7 @@
+$('.message a').click(function(){
+  $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+
 $(document).ready(function() {
   // Getting references to our form and inputs
   var loginForm = $("form.login");
