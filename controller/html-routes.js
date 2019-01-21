@@ -70,4 +70,8 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/community.html"));
   });
 
+  app.get("/bot", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/bot.html"));
+  });
+
 };
