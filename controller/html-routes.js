@@ -21,6 +21,11 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/shoppingcart.html"));
   })
 
+  //checkout page
+  app.get("/checkout", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/checkout.html"));
+  })
+
   //
   app.get("/ourvision", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/ourvision.html"));
