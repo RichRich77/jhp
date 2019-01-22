@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Women's Tops</title>
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+    <!-- link to jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- bulma -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/cards.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Slab:700" rel="stylesheet">
+    <!-- link to own style -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/men.css">
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="assets/images/JHP_Logo_BlkWht.png" width="112" height="28">
+                <span id="jhp"><strong>JHP</strong></span>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="/ourvision" class="navbar-item">
+                    OUR VISION
+                </a>
+
+                <!-- navbar WOMENS pull-down menu (Beginning) -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="/women" class="navbar-link">
+                        WOMEN
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="/women/bestsellers" class="navbar-item">
+                            Bestsellers
+                        </a>
+                        <hr class="navbar-divider">
+                        <a href="/women/tops" class="navbar-item">
+                            Tops
+                        </a>
+                        <a href="/women/bottoms" class="navbar-item">
+                            Bottoms
+                        </a>
+                        <a href="/women/accessories" class="navbar-item">
+                            Accessories
+                        </a>
+                        <hr class="navbar-divider">
+                        <a href="/women" class="navbar-item">
+                            View All
+                        </a>
+                    </div>
+                </div>
+                <!-- navbar WOMENS pull-down menu (End)-->
+
+                <!-- navbar MENS pull-down menu (Beginning) -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="/men" class="navbar-link">
+                        MEN
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="/men/bestsellers" class="navbar-item">
+                            Bestsellers
+                        </a>
+                        <hr class="navbar-divider">
+                        <a href="/men/tops" class="navbar-item">
+                            Tops
+                        </a>
+                        <a href="/men/bottoms" class="navbar-item">
+                            Bottoms
+                        </a>
+                        <a href="/men/accessories" class="navbar-item">
+                            Accessories
+                        </a>
+                        <hr class="navbar-divider">
+                        <a href="/men" class="navbar-item">
+                            View All
+                        </a>
+                    </div>
+                </div>
+                <!-- navbar MENS pull-down menu (End)-->
+
+                <!-- navbar Community pull-down menu (Beginning) -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="/community" class="navbar-link">
+                        Community
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About Us - Our Vision
+                        </a>
+                        <a class="navbar-item">
+                            Upcoming Event - How to get involved
+                        </a>
+                        <a class="navbar-item">
+                            Contact Us!
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Join Team JHP!
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <!-- <a href="/user" class="button is-primary" id="signupButton">
+                            <strong>Sign up</strong>
+                        </a> -->
+                        <a href="/bot" class="button is-primary" id="signupButton">
+                            <strong>Questions?</strong>
+                        </a>
+                        <a href="/user" class="button is-light">
+                            Log in
+                        </a>
+                        <a href="/checkout" class="button is-primary" id="signupButton">
+                            <strong>My Bag</strong>
+                        </a>
+                        <!-- <span style="font-size: 32px; color: Dodgerblue;">
+                <i class="fas fa-search"></i>
+            </span> -->
+                        <!-- <span style="font-size: 32px; color: dodgerblue;">
+                <a href="/shoppingcart"><i class="fas fa-shopping-bag"></i></a> 
+            </span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END navbar -->
+
+    <!-- main body  -->
+
+
+
+    <!-- carousel -->
+
+    <!-- carousel (end) -->
+    <!-- BestSeller's Row (Beginning) -->
+    <div class="container is-widescreen">
+        <div class="notification">
+            <div class="columns">
+                <div class="column">
+                    <div class="columns is-mobile">
+                        <div class="column is-one-quarter">
+                            <p class="bd-notification is-info">First nested column</p>
+                            <div class="card">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        WOMANS TOPS
+                                    </p>
+                                    <a href="#" class="card-header-icon" aria-label="more options">
+                                        <span class="icon">
+                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                </header>
+                                <div class="card-content">
+                                    <div class="content">
+                                        Best Sellers
+                                        <br>
+                                        <br>
+                                        Tops
+                                        <br>
+                                        <br>
+                                        Bottoms
+                                        <br>
+                                        <br>
+                                        Accessories
+                                        <br>
+                                        <br>
+                                        View All
+                                        <br>
+                                        <br>
+                                        COLORS:
+                                        <br>
+                                        SIZES:
+                                        <br>
+                                        ETC.
+                                        <br> Phasellus nec iaculis mauris. Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. Phasellus nec iaculis mauris.Lorem ipsum dolor sit
+                                        amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.Lorem ipsum
+                                        dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
+                                        mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                                        iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Phasellus nec iaculis mauris.Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. Phasellus nec iaculis mauris.Lorem ipsum dolor sit
+                                        amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.Lorem ipsum
+                                        dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.Lorem
+                                        ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis
+                                        mauris.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                                        iaculis mauris.
+                                        <a href="#">@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                                        <br>
+                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Save</a>
+                                    <a href="#" class="card-footer-item">Edit</a>
+                                    <a href="#" class="card-footer-item">Delete</a>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="column is-three-quarters">
+                            <p class="bd-notification is-danger has-text-centered">Second column</p>
+                            <a class="button is-large is-fullwidth is-black is-outlined">SHOP WOMANS TOPS</a>
+                            <div class="columns is-mobile">
+
+                                <div class="column">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-4by5">
+                                                <img src="assets/images/Tank_LW1AZOS_1966.jpeg" alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="columns">
+                                                <div class="column">
+                                                    <figure class="image is-48x48">
+                                                        <img src="assets/images/Swatch_Black.jpeg" alt="Placeholder image">
+                                                    </figure>
+                                                </div>
+                                                <div class="column">
+                                                    <figure class="image is-48x48">
+                                                        <img src="assets/images/Swatch_CharcoalHtherGrey.jpeg" alt="Placeholder image">
+                                                    </figure>
+                                                </div>
+                                                <div class="column">
+                                                    <figure class="image is-48x48">
+                                                        <img src="assets/images/Swatch_Turquoise.jpeg" alt="Placeholder image">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <p class="title is-4"><strong>Yolo Tank</strong></p>
+                                                <time datetime="2016-1-1">$58.00 USD</time><a href="#">#responsive</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="column">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-4by5">
+                                                <img src="assets/images/Tank_LW1AZPS_032695.jpeg" alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="columns">
+                                                <div class="column">
+                                                    <figure class="image is-48x48">
+                                                        <img src="assets/images/Swatch_Black.jpeg" alt="Placeholder image">
+                                                    </figure>
+                                                </div>
+                                                <div class="column">
+                                                    <figure class="image is-48x48">
+                                                        <img src="assets/images/Swatch_CharcoalHtherGrey.jpeg" alt="Placeholder image">
+                                                    </figure>
+                                                </div>
+                                                <div class="column">
+                                                    <figure class="image is-48x48">
+                                                        <img src="assets/images/Swatch_White.jpeg" alt="Placeholder image">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <p class="title is-4"><strong>Duex It Tank</strong></p>
+                                                <time datetime="2016-1-1">$68.00 USD</time><a href="#">#responsive</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="column">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <figure class="image is-4by5">
+                                                <img src="assets/images/Tank_LW1BGYS_0001.jpeg" alt="Placeholder image">
+                                            </figure>
+                                        </div>
+                                        <div class="card-content">
+                                            <div class="columns">
+                                                <div class="column">
+                                                    <figure class="image is-48x48">
+                                                        <img src="assets/images/Swatch_Black.jpeg" alt="Placeholder image">
+                                                    </figure>
+                                                </div>
+                                                <div class="column">
+                                                    <figure class="image is-48x48">
+                                                        <img src="assets/images/Swatch_CharcoalHtherGrey.jpeg" alt="Placeholder image">
+                                                    </figure>
+                                                </div>
+                                                <div class="column">
+                                                    <figure class="image is-48x48">
+                                                        <img src="assets/images/Swatch_CobaltBlue.png" alt="Placeholder image">
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <p class="title is-4"><strong>Tres Chic Tank</strong></p>
+                                                <time datetime="2016-1-1">$88.00 USD</time><a href="#">#responsive</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BestSeller's Row (Beginning) -->
+    <div class="container is-widescreen">
+        <div class="notification">
+            <a class="button is-large is-fullwidth is-black is-outlined">SHOP WOMANS TOPS</a>
+            <br>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by5">
+                                <img src="assets/images/Tank_LW1AZOS_1966.jpeg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="columns">
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_Black.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_CharcoalHtherGrey.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_Turquoise.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="title is-4"><strong>Yolo Tank</strong></p>
+                                <time datetime="2016-1-1">$58.00 USD</time><a href="#">#responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by5">
+                                <img src="assets/images/Tank_LW1AZPS_032695.jpeg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="columns">
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_Black.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_CharcoalHtherGrey.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_White.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="title is-4"><strong>Duex It Tank</strong></p>
+                                <time datetime="2016-1-1">$68.00 USD</time><a href="#">#responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by5">
+                                <img src="assets/images/Tank_LW1BGYS_0001.jpeg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="columns">
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_Black.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_CharcoalHtherGrey.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_CobaltBlue.png" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="title is-4"><strong>Tres Chic Tank</strong></p>
+                                <time datetime="2016-1-1">$88.00 USD</time><a href="#">#responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by5">
+                                <img src="assets/images/Tank_LW1BDGS_038089.jpeg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="columns">
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_Black.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_CharcoalHtherGrey.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_Burgandy.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="title is-4"><strong>Quattro Tank</strong></p>
+                                <time datetime="2016-1-1">$78.00 USD</time><a href="#">#responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- BestSeller's Row (End) -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container is-widescreen">
+        <div class="notification">
+            <a class="button is-large is-fullwidth is-black is-outlined">SHOP WOMANS TOPS</a>
+            <br>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by5">
+                                <img src="assets/images/Tank_LW1AZOS_1966.jpeg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="columns">
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_Black.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_CharcoalHtherGrey.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_Turquoise.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="title is-4"><strong>Yolo Tank</strong></p>
+                                <time datetime="2016-1-1">$58.00 USD</time><a href="#">#responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by5">
+                                <img src="assets/images/Tank_LW1AZPS_032695.jpeg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="columns">
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_Black.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_CharcoalHtherGrey.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_White.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="title is-4"><strong>Duex It Tank</strong></p>
+                                <time datetime="2016-1-1">$68.00 USD</time><a href="#">#responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by5">
+                                <img src="assets/images/Tank_LW1BGYS_0001.jpeg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="columns">
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_Black.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_CharcoalHtherGrey.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_CobaltBlue.png" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="title is-4"><strong>Tres Chic Tank</strong></p>
+                                <time datetime="2016-1-1">$88.00 USD</time><a href="#">#responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by5">
+                                <img src="assets/images/Tank_LW1BDGS_038089.jpeg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="columns">
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_Black.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_CharcoalHtherGrey.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="column">
+                                    <figure class="image is-48x48">
+                                        <img src="assets/images/Swatch_Burgandy.jpeg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="title is-4"><strong>Quattro Tank</strong></p>
+                                <time datetime="2016-1-1">$78.00 USD</time><a href="#">#responsive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- BestSeller's Row (End) -->
+            </div>
+        </div>
+    </div>
+
+    <!-- apparel cards (beginning) -->
+    <!-- apparel cards (end) -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS & Jquery -->
+    <!-- bulma javascript -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <!-- bulma javascript carousel -->
+    <script type="text/javascript" src="assets/javascript/bulma-carousel.js"></script>
+
+    <!-- my own javascript -->
+    <script src="js/index.js"></script>
+
+    <!-- my font awesome javascript -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var carousels = bulmaCarousel.attach();
+        }, false);
+    </script>
+</body>
+
+</html>
