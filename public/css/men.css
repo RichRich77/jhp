@@ -1,0 +1,17 @@
+#clothingImg {
+    height: 340px;
+    /* padding-bottom: 5px; */
+}
+
+.clothingTitle {
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.button:hover, .button:active {
+    background-color: dodgerblue;
+}
+
+.button.on {
+    background-color: dodgerblue;
+}

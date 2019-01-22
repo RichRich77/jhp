@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
-#signupButton {
+#signupButton, #shoppingcartButton {
     background-color: dodgerblue;
 }
 

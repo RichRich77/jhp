@@ -1,12 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ourvision</title>
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+    <!-- link to jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- bulma -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/cards.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Slab:700" rel="stylesheet">
+    <!-- link to own style -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/men.css">
+    <link rel="stylesheet" href="./css/ourvision.css">
+
 </head>
+
 <body>
-    <p>Ourvision</p>
+
+    <!-- navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="assets/images/JHP_Logo_BlkWht.png" width="112" height="28">
+                <span id="jhp"><strong>JHP</strong></span>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="/ourvision" class="navbar-item">
+                    OUR VISION
+                </a>
+
+                <!-- navbar WOMENS pull-down menu (Beginning) -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="/women" class="navbar-link">
+                        WOMEN
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="/women/bestsellers" class="navbar-item">
+                            Bestsellers
+                        </a>
+                        <hr class="navbar-divider">
+                        <a href="/women/tops" class="navbar-item">
+                            Tops
+                        </a>
+                        <a href="/women/bottoms" class="navbar-item">
+                            Bottoms
+                        </a>
+                        <a href="/women/accessories" class="navbar-item">
+                            Accessories
+                        </a>
+                        <hr class="navbar-divider">
+                        <a href="/women" class="navbar-item">
+                            View All
+                        </a>
+                    </div>
+                </div>
+                <!-- navbar WOMENS pull-down menu (End)-->
+
+                <!-- navbar MENS pull-down menu (Beginning) -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="/men" class="navbar-link">
+                        MEN
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="/men/bestsellers" class="navbar-item">
+                            Bestsellers
+                        </a>
+                        <hr class="navbar-divider">
+                        <a href="/men/tops" class="navbar-item">
+                            Tops
+                        </a>
+                        <a href="/men/bottoms" class="navbar-item">
+                            Bottoms
+                        </a>
+                        <a href="/men/accessories" class="navbar-item">
+                            Accessories
+                        </a>
+                        <hr class="navbar-divider">
+                        <a href="/men" class="navbar-item">
+                            View All
+                        </a>
+                    </div>
+                </div>
+                <!-- navbar MENS pull-down menu (End)-->
+
+                <!-- navbar Community pull-down menu (Beginning) -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="/community" class="navbar-link">
+                        Community
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About Us - Our Vision
+                        </a>
+                        <a class="navbar-item">
+                            Upcoming Event - How to get involved
+                        </a>
+                        <a class="navbar-item">
+                            Contact Us!
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Join Team JHP!
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <!-- <a href="/user" class="button is-primary" id="signupButton">
+                            <strong>Sign up</strong>
+                        </a> -->
+                        <a href="/bot" class="button is-primary" id="signupButton">
+                            <strong>Questions?</strong>
+                        </a>
+                        <a href="/user" class="button is-light">
+                            Log in
+                        </a>
+                        <a href="/shoppingcart" class="button is-primary" id="signupButton">
+                            <strong>My Bag</strong>
+                        </a>
+                        <!-- <span style="font-size: 32px; color: Dodgerblue;">
+                <i class="fas fa-search"></i>
+            </span> -->
+                        <!-- <span style="font-size: 32px; color: dodgerblue;">
+                <a href="/shoppingcart"><i class="fas fa-shopping-bag"></i></a> 
+            </span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END navbar -->
+
+    <!-- body page -->
+    <div class="container">
+        <div id="flow">
+            <span class="flow-1"></span>
+            <span class="flow-2"></span>
+            <span class="flow-3"></span>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns is-vcentered">
+                    <div class="column is-5">
+                        <figure class="image is-4by3">
+                            <img src="./assets/images/JHP_Logo_BlkWht.png" alt="Description">
+                        </figure>
+                    </div>
+                    <div class="column is-7">
+                        <h1 class="title is-3">
+                            OUR STORY
+                        </h1>
+                        <h3 class="subtitle is-5">
+                            JHP was created in memory of Jennifer Hite Parvin. Cancer took Jennifer's life in June of
+                            2011, but it never took her lessons. Jennifer taught by example as she loved everyone
+                            around her, and always gave back to her community even through her 6 years of battle with
+                            cancer. To keep her charitable character alive JHP was created to provide resources 
+                            to cancer research. A percentage of every clothing purchased is donated to cancer research and
+                            to families dealing with a member fighting cancer. 
+                        </h3>
+                        <br>
+                        <h1 class="title is-3">
+                                OUR SYMBOL
+                            </h1>
+                            <h3 class="subtitle is-5">
+                                Our JHP symbol at first glance looks like a double cancer ribbon, but upon further viewing,
+                                you can see that it spells out JHP! 
+                            </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <div class="soc">
+                    <a href="#"><i class="fa fa-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-square fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <p>
+                    <a href="/">JHP</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/javascript/men.js"></script>
+
+
 </body>
+
 </html>
