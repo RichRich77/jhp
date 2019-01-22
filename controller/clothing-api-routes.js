@@ -277,7 +277,7 @@ module.exports = function (app) {
             review: 5,
             image: "https://cdn-img-1.wanelo.com/p/59d/ce9/e9a/4b76cc05fafd5d84713e68f/x354-q80.jpg"
         });
-    }).then(function (dbClothing) {
-        res.json(dbClothing);
-    });
+        res.end()
+    })
+
 };
