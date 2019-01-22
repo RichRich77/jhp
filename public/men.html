@@ -180,66 +180,62 @@
                         </div>
                         <div class="card-content">
                             <div class="media">
-                                <div class="media-content">
+                                <div class="media-content" id=1>
                                     <p class="title is-4 no-padding clothingTitle">JHP Shirts</p>
 
                                     <p class="clothingTitle">$<span id="price" value="54.99" class="title is-6">54.99</span></p>
 
-                                    <p class="buttons">
-                                        <a class="size-select button is-medium" id="smallInput">
-                                            <span class="icon is-small" id="smallInput">
+                                    <p class="buttons" value="small">
+                                        <a class="button is-medium size-selection" id="smallInput">
+                                            <span class="icon is-small " id="smallInput">
                                                 S
                                             </span>
                                         </a>
-                                        <a class="size-select button is-medium">
+                                        <a class="button is-medium size-selection">
                                             <span class="icon is-small" id="mediumInput">
                                                 M
                                             </span>
                                         </a>
-                                        <a class="size-select button is-medium">
-                                            <span class="icon is-small" id="largeInput">
+                                        <a class="button is-medium size-selection">
+                                            <span class="icon is-small " id="largeInput">
                                                 L
                                             </span>
                                         </a>
-                                        <a class="select is-small">
-                                            <select class="qty-select" id="quantity">
-                                                <option>quantity</option>
-                                                <option id="one" value=1>1</option>
-                                                <option id="two" value=2>2</option>
-                                                <option id="three" value=3>3</option>
-                                                <option id="four" value=4>4</option>
-                                                <option id="five" value=5>5</option>
-                                            </select>
-                                        </a>
+
+                                        <span>
+                                            <a id="decItemQty">- </a>
+                                            <span id="itemQty">0</span>
+                                            <a id="incItemQty"> +</a>
+                                        </span>
                                     </p>
-                                    <div class="columns" class="colors">
+                                    <div class="columns colors" value="">
                                         <div class="column">
-                                            <figure class="button is-32x32" id="black">
+                                            <figure class="button is-32x32 color-selection" id="black">
                                                 <img src="assets/images/Swatch_Black.jpeg" alt="black">
                                             </figure>
                                         </div>
                                         <div class="column">
-                                            <figure class="button is-32x32" id="red">
+                                            <figure class="button is-32x32 color-selection" id="red">
                                                 <img src="./assets/images/redswatch.jpg" alt="red">
                                             </figure>
                                         </div>
                                         <div class="column">
-                                            <figure class="button is-32x32" id="white">
+                                            <figure class="button is-32x32 color-selection" id="white">
                                                 <img src="assets/images/whiteswatch.jpeg" alt="white">
                                             </figure>
                                         </div>
                                         <div class="column">
-                                            <figure class="button is-32x32" id="blue">
+                                            <figure class="button is-32x32 color-selection" id="blue">
                                                 <img src="assets/images/blueswatch.jpg" alt="blue">
                                             </figure>
                                         </div>
                                         <div class="column">
-                                            <figure class="button is-32x32" id="green">
+                                            <figure class="button is-32x32 color-selection" id="green">
                                                 <img src="assets/images/greenswatch.jpg" alt="green">
                                             </figure>
                                         </div>
                                     </div>
-                                    <a type="submit" class="button is-fullwidth" id="addToBag" value=1>Add to Bag!</a>
+                                    <a type="submit" class="button is-fullwidth" id="addToBag">Add to Bag!</a>
                                 </div>
                             </div>
                         </div>
