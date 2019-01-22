@@ -57,6 +57,20 @@ module.exports = function (sequelize, DataTypes) {
         },
         image: {
             type: DataTypes.STRING
+        },
+        productID: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        selectedSize: {
+            type: DataTypes.ENUM,
+            allowNull: false,
+            values: ["small", "medium", "large"],
+        },
+        selectedQty: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            defaultValue: 0,
         }
     });
     return Shoppingcart; 
