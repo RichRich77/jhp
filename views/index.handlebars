@@ -1,0 +1,53 @@
+{{#each shoppingcarts}}
+
+<div class="columns">
+    <div class="column">
+        <img src="{{itemImage}}" alt="{{itemImageAlt}}" id="biImage">
+    </div>
+    <div class="column is-three-quarters">
+        <div class="columns">
+            <div class="column has-text-right">
+                <a id="deleteCartItem"><i class="fas fa-times"></i></a>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <p class="heading" id="biName">{{itemName}}</p>
+                <p class="heading">$ <span id="biPrice">{{itemPrice}}</span></p>
+            </div>
+            <div class="column">
+                <p class="heading">SIZE</p>
+                <div class="dropdown is-hoverable">
+                    <div class="dropdown-trigger">
+                        <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu4">
+                            <span class="heading" id="biSize">{{itemSize}}</span>
+                            <span class="icon is-small">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item heading biSizeSelect" value="small">SMALL</a>
+                            <a href="#" class="dropdown-item heading biSizeSelect" value="medium">MEDIUM</a>
+                            <a href="#" class="dropdown-item heading biSizeSelect" value="large">LARGE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <p class="heading">QTY</p>
+                <p>
+                    <a class="heading biQuantLine" id="biDecQuant">- </a>
+                    <span class="heading biQuantLine" id="biQuantity">{{itemQty}}</span>
+                    <a class="heading biQuantLine" id="biIncQuant"> +</a>
+                </p>
+            </div>
+            <div class="column">
+                <p class="heading">SUBTOTAL</p>
+                <p class="heading">$ <span id="biSubtotal">{{itemSubtotal}}</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/each}}
