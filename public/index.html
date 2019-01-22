@@ -134,9 +134,16 @@
                         <a href="/user" class="button is-light" id="loginButton">
                             Log in
                         </a>
-                        <a href="/shoppingcart" class="button is-primary" id="shoppingcartButton">
+                        <a href="../public/shoppingcart.html" class="button is-primary" id="shoppingcartButton">
                             <strong>My Bag</strong>
                         </a>
+ <!-- notification button?? for shopping cart "My Bag" (beginning)-->
+                        <!-- <div class="block">
+                                <button class="button badge" data-badge="">Button</button>
+                                <button class="button badge" data-badge="8">Button</button>
+                              </div> -->
+<!-- notification button?? for shopping cart "My Bag" (end) -->
+
                         <!-- <span style="font-size: 32px; color: Dodgerblue;">
                 <i class="fas fa-search"></i>
             </span> -->
@@ -155,28 +162,32 @@
 
 
 <!-- carousel -->
-<div class='carousel carousel-animated carousel-animate-slide' data-autoplay="true">
+
+<div class='hero-carousel carousel-animated carousel-animate-slide' data-autoplay="true">
     <div class='carousel-container'>
         <div class='carousel-item has-background is-active'>
             <a href="/"><img class="is-background" src="assets/images/3_Mood_Mens_yogaPoseSunset.jpg" alt="" width="640"
-                height="200" /></a> 
+                    height="200" /></a>
             <div class="title">JHP Collective</div>
         </div>
         <div class='carousel-item has-background'>
-            <a href="/community"><img class="is-background" src="assets/images/1_Mood_YogaGroup_Image.jpg" alt="" width="640" height="200" /></a>
+            <a href="/community"><img class="is-background" src="assets/images/1_Mood_YogaGroup_Image.jpg" alt="" width="640"
+                    height="200" /></a>
             <div class="title">NEW YEAR! Grab a friend & get Active! <a href="https://www.24hourfitness.com/utility/classes/?clubid=00884"
                     target="_blank">24 Fitness Class Schedule</a></div>
         </div>
         <div class='carousel-item has-background'>
-            <a href="/women"><img class="is-background" src="assets/images/2_Mood_YogaSolo_Image.jpg" alt="" width="640" height="200" /></a> 
+            <a href="/women"><img class="is-background" src="assets/images/2_Mood_YogaSolo_Image.jpg" alt="" width="640"
+                    height="200" /></a>
             <div class="title">Womens Collection</div>
         </div>
         <div class='carousel-item has-background'>
-            <a href="/men"><img class="is-background" src="assets/images/2_Mens_fitness2.jpg" alt="" width="640" height="200" /></a> 
+            <a href="/men"><img class="is-background" src="assets/images/2_Mens_fitness2.jpg" alt="" width="640" height="200" /></a>
             <div class="title">Mens Collection</div>
         </div>
         <div class='carousel-item has-background'>
-            <a href="/ourvision"><img class="is-background" src="assets/images/OurVision_AllhandsOnDeck.jpg" alt="" width="640" height="200" /></a> 
+            <a href="/ourvision"><img class="is-background" src="assets/images/OurVision_AllhandsOnDeck.jpg" alt=""
+                    width="640" height="200" /></a>
             <div class="title">Our Vision</div>
         </div>
     </div>
@@ -188,8 +199,52 @@
             <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </div>
     </div>
-</div>
-</div>
+    <div class="carousel-navigation is-overlay">
+        <div class="hero-body has-text-left ">
+            <div class="columns is-mobile is-left is-narrow">
+                <div class="column is-one-quarter-mobile is-one-quarter-tablet is-one-quarter-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="content has-text-centered">
+                                <!-- <ol type="category-list"> -->
+                                        <h2><a><strong>GET ACTIVE<br>
+                                                IN STYLE</strong></a></h2>
+                                                <!-- <ul>
+                                                        <li><a>Best Sellers</a></li>
+                                                        <li><a>Tops</a></li>
+                                                        <li><a>Bottoms</a></li>
+                                                        <li><a>Accessories</a></li>
+                                                        <li><a>View All</a></li>
+                                                      </ul> -->
+                                        <!-- <li>Best Sellers</li>
+                                        <li>Tops</li>
+                                        <li>Bottoms</li>
+                                        <li>Accessories</li>
+                                        <li>View All</li>
+                                        <br> -->
+                            </div>
+                            <aside class="menu">
+                                    <p class="menu-label">
+                                    </p>
+                                    <ul class="menu-list">
+                                      <!-- <li> -->
+                                        <!-- <a class="is-active">JHP COLLECTIVE 2019</a> -->
+                                        <ul>
+                                          <li><a href="../public/women.html">Best Sellers</a></li>
+                                          <li><a>Tops</a></li>
+                                          <li><a>Bottoms</a></li>
+                                          <li><a>Accessories</a></li>
+                                          <li><a>View All</a></li>
+                                        </ul>
+                                      <!-- </li> -->
+                                    </ul>
+                                  </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!-- carousel (end) -->
 
@@ -226,7 +281,32 @@
                         </div>
                         <div class="content">
                           <p class="title is-4"><strong>Yolo Tank</strong></p>
-                          <time datetime="2016-1-1">$58.00 USD</time><a href="#">#responsive</a>
+                          <br>
+                          <time datetime="2016-1-1">$58.00 USD</time>
+                          <!-- social media (beinging)-->
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <a class="bd-tw-button button is-link" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+                                        target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                                        <span class="icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </span>
+                                        <span>
+                                            Tweet
+                                        </span>
+                                    </a>
+                                    <a class="bd-tw-button button is-info" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+                                    target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                                    <span class="icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </span>
+                                    <span>
+                                        Facebook
+                                    </span>
+                                </a>
+                                </p>
+                            </div>
+                            <!-- social media (end)-->
                         </div>
                       </div>
                     </div>
@@ -258,8 +338,32 @@
                     </div>
                   </div>
                   <div class="content">
-                    <p class="title is-4"><strong>Mens Moto Compression Pant</strong></p>
-                    <time datetime="2016-1-1">$58.00 USD</time><a href="#">#responsive</a>
+                    <p class="title is-4"><strong>Mens Moto Comp Pant</strong></p>
+                    <time datetime="2016-1-1">$78.00 USD</time>
+                    <!-- social media (beinging)-->
+                    <div class="field is-grouped">
+                            <p class="control">
+                                <a class="bd-tw-button button is-link" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+                                    target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                                    <span class="icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </span>
+                                    <span>
+                                        Tweet
+                                    </span>
+                                </a>
+                                <a class="bd-tw-button button is-info" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+                                target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                                <span class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </span>
+                                <span>
+                                    Facebook
+                                </span>
+                            </a>
+                            </p>
+                        </div>
+                        <!-- social media (end)-->
                   </div>
                 </div>
               </div>
@@ -291,7 +395,31 @@
                   </div>
                   <div class="content">
                     <p class="title is-4"><strong>Hot Pantz Yoga Pant</strong></p>
-                    <time datetime="2016-1-1">$58.00 USD</time><a href="#">#responsive</a>
+                    <time datetime="2016-1-1">$98.00 USD</time>
+                    <!-- social media (beinging)-->
+                    <div class="field is-grouped">
+                            <p class="control">
+                                <a class="bd-tw-button button is-link" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+                                    target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                                    <span class="icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </span>
+                                    <span>
+                                        Tweet
+                                    </span>
+                                </a>
+                                <a class="bd-tw-button button is-info" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+                                target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                                <span class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </span>
+                                <span>
+                                    Facebook
+                                </span>
+                            </a>
+                            </p>
+                        </div>
+                        <!-- social media (end)-->
                   </div>
                 </div>
               </div>
@@ -323,7 +451,31 @@
                   </div>
                   <div class="content">
                     <p class="title is-4"><strong>Concrete Jungle Day Pack</strong></p>
-                    <time datetime="2016-1-1">$58.00 USD</time><a href="#">#responsive</a>
+                    <time datetime="2016-1-1">$58.00 USD</time>
+                    <!-- social media (beinging)-->
+                    <div class="field is-grouped">
+                            <p class="control">
+                                <a class="bd-tw-button button is-link" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+                                    target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                                    <span class="icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </span>
+                                    <span>
+                                        Tweet
+                                    </span>
+                                </a>
+                                <a class="bd-tw-button button is-info" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://localhost:4000"
+                                target="_blank" href="https://shop.nordstrom.com/content/breast-prosthesis-program">
+                                <span class="icon">
+                                    <i class="fab fa-facebook-f"></i>
+                                </span>
+                                <span>
+                                    Facebook
+                                </span>
+                            </a>
+                            </p>
+                        </div>
+                        <!-- social media (end)-->
                   </div>
                 </div>
               </div>
@@ -355,19 +507,19 @@
     
  <!-- JS -->
  
-         <!-- bulma javascript carousel -->
-         <script type="text/javascript" src="./assets/javascript/bulma-carousel.js"></script>
- 
-         <!-- my own javascript -->
-         <script src="js/index.js"></script>
-
-         <!-- my font awesome javascript -->
-         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
-         <script>
-            document.addEventListener('DOMContentLoaded', function(){
-              var carousels = bulmaCarousel.attach();
+        <!-- bulma javascript carousel -->
+        <script type="text/javascript" src="./assets/javascript/bulma-carousel.js"></script>
+        
+        <!-- my own javascript -->
+        <script src="js/index.js"></script>
+        
+        <!-- my font awesome javascript -->
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var carousels = bulmaCarousel.attach();
             }, false);
-            </script>
+        </script>
 </body>
 </html>
