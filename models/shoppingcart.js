@@ -16,7 +16,7 @@ module.exports = function (sequelize, DataTypes) {
             defaultValue: 100,
             validate: {
                 isNumeric: true,
-            }
+            },
         },
         medium_quantity: {
             type: DataTypes.INTEGER,

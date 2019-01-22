@@ -19,7 +19,7 @@ $(document).ready(function () {
                 switch (sISize) {
                     case small:
                         if (sIQty >= result.small_quantity) {
-                            
+
                         }
                         break;
                     case medium:
@@ -37,73 +37,62 @@ $(document).ready(function () {
                         return false;
                         break;
                 }
-
-
-                for (var i = 0; i < result.length; i++) {
-                    html += "<li><p> ID: " + result[i].id + "</p>";
-                    html += "<p> Name: " + result[i].name + "</p>";
-                    html += "<p> Coolness Points: " + result[i].coolness_points + "</p>";
-                    html += "<p>Attitude: " + result[i].attitude + "</p></li>";
-                }
-
-                html += "</ul>";
-
-                res.send(html);
-            }
+            })
+        });
 
         // Make a new cart item object
         var newCartItem = {
-                productID: parseInt(sIProdID),
-                selectedSize: sISize,
-                selectedQty: parseInt(sIQty),
-                color: sIColor
-            };
+            productID: parseInt(sIProdID),
+            selectedSize: sISize,
+            selectedQty: parseInt(sIQty),
+            color: sIColor
+        };
 
-            // Send an AJAX POST-request with jQuery
-            $.post("/api/shoppingcart", newCartItem)
-                .then(function (data) {
-                    console.log(data);
-                });
+        // Send an AJAX POST-request with jQuery
+        $.post("/api/shoppingcart", newCartItem)
+            .then(function (data) {
+                console.log(data);
+            });
 
-        });
-
-        // get size desired
-        $(".size-selection").click(function () {
-            var selSize = $(this).attr("id");
-            $(this).parent().innerHTML = selSize;
-
-            // TODO
-            // set ID for grandparent to size so we can access it later
-        });
-
-        // set desired color
-        $(".color-selection").click(function () {
-            var selColor = $(this).attr("id");
-            var curVal = $(this).parent().parent().attr("value");
-            // console.log("currval = " + curVal + "   selVal = " + selColor);
-
-            // TODO
-            // manage to get the darn color
-        });
-
-
-        // decrement particular item before adding to cart
-        $("#decItemQty").click(function () {
-            var curQty = $(this).siblings("#itemQty").text();
-            console.log(curQty + "-");
-            if (curQty > 0) {
-                curQty--;
-                $(this).siblings("#itemQty").text(curQty);
-            }
-        });
-
-        // increment particular item before adding to cart
-        $("#incItemQty").click(function () {
-            var curQty = $(this).siblings("#itemQty").text();
-            // var stockCheckID = $(this).parent().parent().parent().val();
-            if (true) { //checkStock(stockCheckID)){
-                curQty++;
-                $(this).siblings("#itemQty").text(curQty);
-            }
-        });
     });
+
+    // get size desired
+    $(".size-selection").click(function () {
+        var selSize = $(this).attr("id");
+        $(this).parent().innerHTML = selSize;
+
+        // TODO
+        // set ID for grandparent to size so we can access it later
+    });
+
+    // set desired color
+    $(".color-selection").click(function () {
+        var selColor = $(this).attr("id");
+        var curVal = $(this).parent().parent().attr("value");
+        // console.log("currval = " + curVal + "   selVal = " + selColor);
+
+        // TODO
+        // manage to get the darn color
+    });
+
+
+    // decrement particular item before adding to cart
+    $("#decItemQty").click(function () {
+        var curQty = $(this).siblings("#itemQty").text();
+        console.log(curQty + "-");
+        if (curQty > 0) {
+            curQty--;
+            $(this).siblings("#itemQty").text(curQty);
+        }
+    });
+
+    // increment particular item before adding to cart
+    $("#incItemQty").click(function () {
+        var curQty = $(this).siblings("#itemQty").text();
+        // var stockCheckID = $(this).parent().parent().parent().val();
+        if (true) { //checkStock(stockCheckID)){
+            curQty++;
+            $(this).siblings("#itemQty").text(curQty);
+        }
+    });
+});
