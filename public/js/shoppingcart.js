@@ -36,10 +36,9 @@ $("#cartTotal").text((0 + (234.43 * 1.075)).toFixed(2));
   
 
 
-  <div class="level"><div class="level-item level-right"><i class="fas fa-times"></i></div></div>
     
 
-
+    
 // function loadShoppingCart() {
 //     // display how many items in cart
 //     $("#numItems").text(numItems); // update 
