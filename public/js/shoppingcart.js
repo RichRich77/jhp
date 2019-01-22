@@ -1,18 +1,23 @@
-<<<<<<< HEAD
-var numItems; // number of items in cart
-$("#cartSubtotal").text(234.43);
-$("#cartTax").text((234.43 * 0.075).toFixed(2));
-$("#cartTotal").text((0 + (234.43 * 1.075)).toFixed(2));
-
-// add onclick for adding to cart to increment numitems however many
-
-
-// When the page loads, grab and display all of our chirps
-// $.get("/shoppingcart", function(data) { //pretty sure gotta change this line
-
-//     if (data.length !== 0) {
+$(document).ready(function() {
   
-//       for (var i = 0; i < data.length; i++) {
+});
+
+
+
+// var numItems; // number of items in cart
+// $("#cartSubtotal").text(234.43);
+// $("#cartTax").text((234.43 * 0.075).toFixed(2));
+// $("#cartTotal").text((0 + (234.43 * 1.075)).toFixed(2));
+
+// // add onclick for adding to cart     to increment numitems however many
+
+
+// // When the page loads, grab and display all of our chirps
+// // $.get("/shoppingcart", function(data) { //pretty sure gotta change this line
+
+// //     if (data.length !== 0) {
+  
+// //       for (var i = 0; i < data.length; i++) {
   
 
 
@@ -20,20 +25,20 @@ $("#cartTotal").text((0 + (234.43 * 1.075)).toFixed(2));
 
 
 
-//         var row = $("<div>");
-//         row.addClass("chirp");
+// //         var row = $("<div>");
+// //         row.addClass("chirp");
   
-//         row.append("<p>" + data[i].author + " chirped.. </p>");
-//         row.append("<p>" + data[i].body + "</p>");
-//         row.append("<p>At " + moment(data[i].created_at).format("h:mma on dddd") + "</p>");
+// //         row.append("<p>" + data[i].author + " chirped.. </p>");
+// //         row.append("<p>" + data[i].body + "</p>");
+// //         row.append("<p>At " + moment(data[i].created_at).format("h:mma on dddd") + "</p>");
   
-//         $("#chirp-area").prepend(row);
+// //         $("#chirp-area").prepend(row);
   
-//       }
+// //       }
   
-//     }
+// //     }
   
-//   });
+// //   });
   
 
 
@@ -59,7 +64,6 @@ $("#cartTotal").text((0 + (234.43 * 1.075)).toFixed(2));
 
 
 // }
-=======
 $(document).ready(function () {
 
     var smallInput = $("#smallInput");
@@ -117,4 +121,3 @@ $(document).ready(function () {
         $.get("/api/shoppingcart", itemData);
     }
 });
->>>>>>> origin/gh-pages
