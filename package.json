@@ -34,19 +34,20 @@
     "express": "^4.16.4",
     "express-generator": "^4.16.0",
     "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
     "fs": "0.0.1-security",
     "https": "^1.0.0",
     "mysql2": "^1.6.4",
     "sequelize": "^4.42.0"
   },
   "devDependencies": {
-    "jest": "^23.6.0",
-    "nightmare": "^3.0.1",
-    "sequelize": "^4.42.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
-    "express-session": "^1.14.2",
+    "express-session": "^1.15.6",
+    "jest": "^23.6.0",
+    "nightmare": "^3.0.1",
     "passport": "^0.3.2",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.42.0"
   }
 }
