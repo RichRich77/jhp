@@ -19,3 +19,33 @@ body {
 .navbar-item img {
     max-height: 4rem;
 }
+
+.hero-carousel .carousel-container .carousel-item .title {
+    font-size: 1.25rem;
+}
+
+.modal is-active .modal-content {
+  position: relative;
+  text-align: center
+}
+
+/* hover over link */
+a:hover {
+    color:  dodgerblue;
+  }
+
+.button is-32x32 {
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+/* padding-bottom: calc(.375em - 1px);
+padding-left: calc(.625em - 1px);
+padding-right: calc(.625em - 1px);
+padding-top: calc(.375em - 1px); */
+
+.footer {
+    background-color:#051021;
+}
