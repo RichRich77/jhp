@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Community</title>
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+    <!-- link to jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- bulma -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/cards.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Slab:700" rel="stylesheet">
+    <!-- link to own style -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="./css/men.css"> -->
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+                <img src="assets/images/JHP_Logo_BlkWht.png" width="112" height="28">
+                <span id="jhp"><strong>JHP</strong></span>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="/ourvision" class="navbar-item">
+                    OUR VISION
+                </a>
+
+                <!-- navbar WOMENS pull-down menu (Beginning) -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="/women" class="navbar-link">
+                        WOMEN
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="/women/bestsellers" class="navbar-item">
+                            Bestsellers
+                        </a>
+                        <hr class="navbar-divider">
+                        <a href="/women/tops" class="navbar-item">
+                            Tops
+                        </a>
+                        <a href="/women/bottoms" class="navbar-item">
+                            Bottoms
+                        </a>
+                        <a href="/women/accessories" class="navbar-item">
+                            Accessories
+                        </a>
+                        <hr class="navbar-divider">
+                        <a href="/women" class="navbar-item">
+                            View All
+                        </a>
+                    </div>
+                </div>
+                <!-- navbar WOMENS pull-down menu (End)-->
+
+                <!-- navbar MENS pull-down menu (Beginning) -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="/men" class="navbar-link">
+                        MEN
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a href="/men/bestsellers" class="navbar-item">
+                            Bestsellers
+                        </a>
+                        <hr class="navbar-divider">
+                        <a href="/men/tops" class="navbar-item">
+                            Tops
+                        </a>
+                        <a href="/men/bottoms" class="navbar-item">
+                            Bottoms
+                        </a>
+                        <a href="/men/accessories" class="navbar-item">
+                            Accessories
+                        </a>
+                        <hr class="navbar-divider">
+                        <a href="/men" class="navbar-item">
+                            View All
+                        </a>
+                    </div>
+                </div>
+                <!-- navbar MENS pull-down menu (End)-->
+
+                <!-- navbar Community pull-down menu (Beginning) -->
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="/community" class="navbar-link">
+                        COMMUNITY
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                            About Us - Our Vision
+                        </a>
+                        <a class="navbar-item">
+                            Upcoming Event - How to get involved
+                        </a>
+                        <a class="navbar-item">
+                            Contact Us!
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                            Join Team JHP!
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="/bot" class="button is-primary" id="signupButton">
+                            <strong>Questions?</strong>
+                        </a>
+                        <a href="/user" class="button is-light">
+                            Log in
+                        </a>
+                        <a href="/checkout" class="button is-primary" id="signupButton">
+                            <strong>My Bag</strong>
+                        </a>
+                        <!-- <span style="font-size: 32px; color: Dodgerblue;">
+                <i class="fas fa-search"></i>
+            </span> -->
+                        <!-- <span style="font-size: 32px; color: dodgerblue;">
+                <a href="/shoppingcart"><i class="fas fa-shopping-bag"></i></a> 
+            </span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END navbar -->
+
+    <!-- main body  -->
+    <!-- carousel -->
+    </div>
+    </div>
+    <!-- carousel (end) -->
+
+    <!-- BestSeller's Row (Beginning) -->
+    <div class="container is-widescreen">
+        <div class="notification">
+            <figure class="image is-2by1">
+                <img src="assets/images/OurVision_AllhandsOnDeck.jpg">
+            </figure>
+            <br>
+            <a class="button is-large is-fullwidth is-link is-active">JOIN THE JHP COMMUNITY ~ GET INVOLVED ~ LIVE YOUR BEST LIFE</a>
+            <br>
+            <!-- Meet the Team-->
+            <div class="columns">
+                <!-- Team Member #1 (beginning)-->
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-square">
+                            <img src="assets/images/Bijan_TempImage.png" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img src="assets/images/JHP_Logo_BlkWht.jpg" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-4">Bijan</p>
+                              <p class="subtitle is-6">@jhpcollective</p>
+                            </div>
+                          </div>
+                      
+                          <div class="content">
+                            CEO of Awesomeness. 
+                            <br>
+                            <p>Connect with us!</p>
+                            <a>Bijan@gmail.com</a>.
+                          </div>
+                          <div class="content is-fullwidth">
+                              <span class="icon has-text-info icon is-large media-left">
+                                  <i class="fab fa-facebook-square fa-3x"></i>
+                                </span>
+                                <span class="icon has-text-danger">
+                                    <i class="fab fa-instagram fa-3x"></i>
+                                  </span>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <!-- Team Member #1 (end)-->
+
+                <!-- Team Member #2 (beginning)-->
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-square">
+                            <img src="assets/images/Michelle_FullSizeRender.png" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img src="assets/images/JHP_Logo_BlkWht.png" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-4">Michelle</p>
+                              <p class="subtitle is-6">@jhpcollective</p>
+                            </div>
+                          </div>
+                      
+                          <div class="content">
+                            CEO of Awesomeness. 
+                            <br>
+                            <p>Connect with us!</p>
+                            <a>MichelleChoe@gmail.com</a>.
+                          </div>
+                          <div class="content is-fullwidth">
+                              <span class="icon has-text-info icon is-large media-left">
+                                  <i class="fab fa-facebook-square fa-3x"></i>
+                                </span>
+                                <span class="icon has-text-danger">
+                                    <i class="fab fa-instagram fa-3x"></i>
+                                  </span>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <!-- Team Member #2 (end)-->
+
+                <!-- Team Member #3 (beginning)-->
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-square">
+                            <img src="assets/images/RichardM_TempImage.png" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img src="assets/images/JHP_Logo_BlkWht.png" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-4">Richard</p>
+                              <p class="subtitle is-6">@jhpcollective</p>
+                            </div>
+                          </div>
+                      
+                          <div class="content">
+                            CEO of Awesomeness. 
+                            <br>
+                            <p>Connect with us!</p>
+                            <a>RichardM@gmail.com</a>.
+                          </div>
+                          <div class="content is-fullwidth">
+                              <span class="icon has-text-info icon is-large media-left">
+                                  <i class="fab fa-facebook-square fa-3x"></i>
+                                </span>
+                                <span class="icon has-text-danger">
+                                    <i class="fab fa-instagram fa-3x"></i>
+                                  </span>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <!-- Team Member #3 (end)-->
+
+                <!-- Team Member #4 (beginning)-->
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-square">
+                            <img src="assets/images/Cindy_TempImage.jpg" alt="Placeholder image">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img src="assets/images/JHP_Logo_BlkWht.png" alt="Placeholder image">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-4">Cindy</p>
+                              <p class="subtitle is-6">@jhpcollective</p>
+                            </div>
+                          </div>
+                      
+                          <div class="content">
+                            CEO of Awesomeness. 
+                            <br>
+                            <p>Connect with us!</p>
+                            <a>Cindy@gmail.com</a>.
+                          </div>
+                          <div class="content is-fullwidth">
+                              <span class="icon has-text-info icon is-large media-left">
+                                  <i class="fab fa-facebook-square fa-3x"></i>
+                                </span>
+                                <span class="icon has-text-danger">
+                                    <i class="fab fa-instagram fa-3x"></i>
+                                  </span>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <!-- Team Member #4 (end)-->
+                <!-- BestSeller's Row (End) -->
+            </div>
+
+<!-- CLothing -->
+<article class="media">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img src="assets/images/JHP_Logo_BlkWht.png">
+      </p>
+    </figure>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>Kahala Lee</strong>
+          <br>
+          Thank you all for your continued support of our programs. It's been such a great opportunity for us here at the JHP Collective family to support you all in your journey.  Not only celebrating survival, but living life to the fullest.  Please continue to stay positive and fight on to live everyday to it's fullest.  I know many have reached out regarding programs to support you emotionally as well as physically  I'm excited to announce we will be partnering with Nordstrom!!! Nordstroms will match every donation from every JHP Collective purchase made for Spring 2019! Please check out all their great products.
+          <!-- link to Cancer Survivor Assistance Programs -->
+            <a href="https://shop.nordstrom.com/content/breast-prosthesis-program">Nordstrom Cancer survivor assistance programs</a>
+            <!-- <a class="button is-large is-fullwidth is-primary is-outlined is-active">NORDSTROMS PROTHESIS PROGRAM ~ LIVE YOUR BEST LIFE</a> -->
+          <br>
+          <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
+        </p>
+      </div>
+  
+      <article class="media">
+        <figure class="media-left">
+          <p class="image is-48x48">
+            <img src="assets/images/JHP_Logo_PnkWht.png">
+          </p>
+        </figure>
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>Shane O'Conner</strong>
+              <br>
+              Thanks you SO much JHP! My mother has gotten back into the water and swimming laps every day.  The prothesis is working great, fits well. She's excited to be able to feel more secure at the beach and the pool this summer.
+              <br>
+              <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+            </p>
+          </div>
+  
+          <article class="media">
+            This has been a great help to both my wife and sister who are struggling to find the right fit.  So this is great!
+          </article>
+  
+          <article class="media">
+            Also my mother has gotten back into the water and swimming laps every day.  The prothesis is working great, fits well. She's excited to be able to feel more secure at the beach and the pool this summer.
+          </article>
+        </div>
+      </article>
+  
+      <article class="media">
+        <figure class="media-left">
+          <p class="image is-48x48">
+            <img src="assets/images/JHP_TempLogo.png">
+          </p>
+        </figure>
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>Kayli Rose</strong>
+              <br>
+              Thanks for the info and all the continued support after my mother's surgery.  The customer service was phenomenal as always.  LOVE!!! LOVE!!! LOVE!!! Nordstroms everm more!
+              <br>
+              <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </article>
+  <article class="media">
+    <figure class="media-left">
+      <p class="image is-64x64">
+        <img src="assets/images/JHP_Logo_BlkWht.png">
+      </p>
+    </figure>
+    <div class="media-content">
+      <div class="field">
+        <p class="control">
+          <textarea class="textarea" placeholder="Add a comment..."></textarea>
+        </p>
+      </div>
+      <div class="field">
+        <p class="control">
+          <button class="button">Post comment</button>
+        </p>
+      </div>
+    </div>
+  </article>
+
+    <!-- apparel cards (beginning) -->
+
+        </div>
+    <!-- apparel cards (end) -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <div class="soc">
+                    <a href="#"><i class="fa fa-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-square fa-2x" aria-hidden="true"></i></a>
+                </div>
+                <p>
+                    <a href="/">JHP</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- JS & Jquery -->
+    <!-- bulma javascript -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <!-- bulma javascript carousel -->
+    <script type="text/javascript" src="assets/javascript/bulma-carousel.js"></script>
+
+    <!-- my own javascript -->
+    <script src="js/index.js"></script>
+
+    <!-- my font awesome javascript -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var carousels = bulmaCarousel.attach();
+        }, false);
+    </script>
+</body>
+
+</html>
